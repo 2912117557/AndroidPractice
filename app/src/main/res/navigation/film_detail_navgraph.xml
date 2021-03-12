@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/film_detail_navgraph"
+    app:startDestination="@id/filmDetailFragment">
+    <fragment
+        android:id="@+id/filmDetailFragment"
+        android:name="com.example.myapplication4.main.FilmDetailFragment"
+        android:label="详情页"
+        tools:layout="@layout/fragment_film_detail">
+        <argument
+            android:name="filmId"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_filmDetailFragment_to_filmActorFragment"
+            app:destination="@id/filmActorFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/filmActorFragment"
+        android:name="com.example.myapplication4.main.FilmActorFragment"
+        android:label="人物详情">
+        <argument
+            android:name="actorUrl"
+            app:argType="string"/>
+    </fragment>
+</navigation>

@@ -1,0 +1,13 @@
+
+ViewPager2 mViewPager2;
+
+//缓存几块，不包括自身
+
+//缓存 设置n，缓存n，加上预取的1，最终为n+1；默认是2
+((RecyclerView) mViewPager2.getChildAt(0)).setItemViewCacheSize(n);
+//预取 预取的那一块会onStart，不会onResume；值为1
+((RecyclerView) mViewPager2.getChildAt(0)).getLayoutManager().setItemPrefetchEnabled(false);
+//预加载 每次点击都会发生；会缓存（会缓存2n+1块）；预加载那几块会onStart，不会onResume；默认是-1，即不会预加载
+mViewPager2.setOffscreenPageLimit(n);
+
+//已经创建的页面被不可见后，会onPause，不会onStop

@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragFilmDetail_FrameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/fragFilmDetail_SwipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/fragFilmDetail_ImageView"
+                    android:layout_width="120dp"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:contentDescription="电影海报"
+                    android:scaleType="fitXY"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:srcCompat="@drawable/test_image" />
+
+                <TextView
+                    android:id="@+id/ffd_TextView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:text="名称："
+                    app:layout_constraintStart_toEndOf="@+id/fragFilmDetail_ImageView"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <TextView
+                    android:id="@+id/ffd_TextView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/ffd_TextView1"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="TextView" />
+
+                <TextView
+                    android:id="@+id/ffd_TextView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="原名称："
+                    app:layout_constraintStart_toEndOf="@+id/fragFilmDetail_ImageView"
+                    app:layout_constraintTop_toBottomOf="@id/ffd_TextView1" />
+
+
+                <TextView
+                    android:id="@+id/ffd_TextView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/ffd_TextView3"
+                    app:layout_constraintTop_toBottomOf="@+id/ffd_TextView2"
+                    tools:text="TextView" />
+
+                <TextView
+                    android:id="@+id/ffd_TextView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="类型："
+                    app:layout_constraintStart_toEndOf="@+id/fragFilmDetail_ImageView"
+                    app:layout_constraintTop_toBottomOf="@+id/ffd_TextView3" />
+
+                <TextView
+                    android:id="@+id/ffd_TextView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/ffd_TextView5"
+                    app:layout_constraintTop_toBottomOf="@+id/ffd_TextView3"
+                    tools:text="TextView" />
+
+                <TextView
+                    android:id="@+id/ffd_TextView16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/ffd_TextView6"
+                    app:layout_constraintTop_toBottomOf="@+id/ffd_TextView4"
+                    tools:text="TextView" />
+
+                <TextView
+                    android:id="@+id/ffd_TextView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="制片国家/地区："
+                    app:layout_constraintStart_toEndOf="@+id/fragFilmDetail_ImageView"
+                    app:layout_constraintTop_toBottomOf="@+id/ffd_TextView5" />
+
+                <TextView
+                    android:id="@+id/ffd_TextView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/ffd_TextView7"
+                    app:layout_constraintTop_toBottomOf="@+id/ffd_TextView6"
+                    tools:text="TextView" />
+
+                <TextView
+                    android:id="@+id/ffd_TextView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="语言："
+                    app:layout_constraintStart_toEndOf="@+id/fragFilmDetail_ImageView"
+                    app:layout_constraintTop_toBottomOf="@+id/ffd_TextView7" />
+
+                <TextView
+                    android:id="@+id/ffd_TextView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/ffd_TextView9"
+                    app:layout_constraintTop_toBottomOf="@+id/ffd_TextView8"
+                    tools:text="TextView" />
+
+                <TextView
+                    android:id="@+id/ffd_TextView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="上映日期："
+                    app:layout_constraintStart_toEndOf="@+id/fragFilmDetail_ImageView"
+                    app:layout_constraintTop_toBottomOf="@+id/ffd_TextView9" />
+
+                <TextView
+                    android:id="@+id/ffd_TextView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/ffd_TextView11"
+                    app:layout_constraintTop_toBottomOf="@+id/ffd_TextView10"
+                    tools:text="TextView" />
+
+                <TextView
+                    android:id="@+id/ffd_TextView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="评分："
+                    app:layout_constraintStart_toEndOf="@+id/fragFilmDetail_ImageView"
+                    app:layout_constraintTop_toBottomOf="@+id/ffd_TextView11" />
+
+                <TextView
+                    android:id="@+id/ffd_TextView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/ffd_TextView13"
+                    app:layout_constraintTop_toBottomOf="@+id/ffd_TextView12"
+                    tools:text="TextView" />
+
+                <TextView
+                    android:id="@+id/ffd_TextView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/ffd_TextView14"
+                    app:layout_constraintTop_toBottomOf="@+id/ffd_TextView12"
+                    tools:text="TextView" />
+
+                <TextView
+                    android:id="@+id/ffd_TextView18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="32dp"
+                    android:text="剧情简介："
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/fragFilmDetail_ImageView" />
+
+                <TextView
+                    android:id="@+id/ffd_TextView19"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ffd_TextView18"
+                    tools:text="@string/ffd_introduction" />
+
+                <TextView
+                    android:id="@+id/ffd_TextView20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="32dp"
+                    android:text="参演人员："
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ffd_TextView19" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/fragFilmDetail_RecycleView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ffd_TextView20" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <TextView
+        android:id="@+id/fragFilmDetail_ErrorTextView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="Error"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+</FrameLayout>
+

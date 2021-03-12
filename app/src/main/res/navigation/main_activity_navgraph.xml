@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_activity_navgraph"
+    app:startDestination="@id/contentFragment">
+
+    <fragment
+        android:id="@+id/contentFragment"
+        android:name="com.example.myapplication4.main.ContentFragment"
+        android:label=""
+        tools:layout="@layout/fragment_content">
+        <action
+            android:id="@+id/action_contentFragment_to_film_detail_navgraph"
+            app:destination="@id/film_detail_navgraph" />
+    </fragment>
+    <fragment
+        android:id="@+id/userInfoFragment"
+        android:name="com.example.myapplication4.main.UserInfoFragment"
+        android:label="用户中心"
+        tools:layout="@layout/fragment_user_info" />
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.example.myapplication4.main.SettingFragment"
+        android:label="设置"
+        tools:layout="@layout/fragment_setting" />
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.example.myapplication4.main.AboutFragment"
+        android:label="关于"
+        tools:layout="@layout/fragment_about" />
+
+    <include app:graph="@navigation/film_detail_navgraph" />
+
+</navigation>
+
