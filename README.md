@@ -6,11 +6,9 @@
 
 - 应用截图：项目目录`/screenshot`
 
-![应用截图1](screenshot/03.png)
-
-![应用截图2](screenshot/07.png)
-
-![应用截图3](screenshot/09.png)
+![应用截图1](https://github.com/2912117557/banya/blob/master/screenshot/03.PNG)
+![应用截图2](https://github.com/2912117557/banya/blob/master/screenshot/07.PNG)
+![应用截图3](https://github.com/2912117557/banya/blob/master/screenshot/09.PNG)
 
 - 项目描述：
 1. 首页分为三个模块：电影，图书，音乐。电影模块包括热映榜，TOP250两个部分，图书模块包括综合，文学，流行，文化，生活五个部分。
