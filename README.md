@@ -30,6 +30,7 @@
 - 应用截图：项目目录`/screenshot`
 
 ![应用截图1](https://github.com/2912117557/banya/blob/master/screenshot/07.PNG)
+
 ![应用截图2](https://github.com/2912117557/banya/blob/master/screenshot/08.PNG)
 
 ![应用截图3](https://github.com/2912117557/banya/blob/master/screenshot/09.PNG)
