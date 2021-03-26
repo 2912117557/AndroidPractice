@@ -4,14 +4,6 @@
 
 要开发什么的思路来源于开源项目：`https://github.com/forezp/banya`。具体实现全部个人完成。
 
-- 应用截图：项目目录`/screenshot`
-
-![应用截图1](https://github.com/2912117557/banya/blob/master/screenshot/03.PNG)
-
-![应用截图2](https://github.com/2912117557/banya/blob/master/screenshot/07.PNG)
-
-![应用截图3](https://github.com/2912117557/banya/blob/master/screenshot/09.PNG)
-
 - 项目描述：
 1. 首页分为三个模块：电影，图书，音乐。电影模块包括热映榜，TOP250两个部分，图书模块包括综合，文学，流行，文化，生活五个部分。
 2. 实现了电影列表，电影详情，电影参演人员信息，图书列表的查看；搜索功能；注册，登录，注销功能。
@@ -34,6 +26,17 @@
 2. 豆瓣官方图书API：`https://douban-api-docs.zce.me/book.html``apiKey=054022eaeae0b00e0fc068c0c0a2102a`
 
 - 注册登录相关代码在另一个仓库：`https://github.com/2912117557/banya_back`
+
+- 应用截图：项目目录`/screenshot`
+
+![应用截图1](https://github.com/2912117557/banya/blob/master/screenshot/07.PNG)
+![应用截图2](https://github.com/2912117557/banya/blob/master/screenshot/08.PNG)
+![应用截图3](https://github.com/2912117557/banya/blob/master/screenshot/09.PNG)
+![应用截图4](https://github.com/2912117557/banya/blob/master/screenshot/03.PNG)
+![应用截图5](https://github.com/2912117557/banya/blob/master/screenshot/04.PNG)
+![应用截图6](https://github.com/2912117557/banya/blob/master/screenshot/05.PNG)
+![应用截图7](https://github.com/2912117557/banya/blob/master/screenshot/10.PNG)
+
 
 
 
