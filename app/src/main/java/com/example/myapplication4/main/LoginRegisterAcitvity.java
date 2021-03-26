@@ -1,6 +1,7 @@
 package com.example.myapplication4.main;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -18,6 +19,7 @@ import androidx.appcompat.widget.Toolbar;
 import com.example.myapplication4.R;
 import com.example.myapplication4.film.brief.hotList.FilmHotListRepository;
 import com.example.myapplication4.loginRegister.LoginRegisterBean_Network;
+import com.example.myapplication4.myLib.MySingleton;
 import com.example.myapplication4.myLib.NetworkConnectStatus;
 import com.example.myapplication4.myLib.NetworkConnectTest;
 import com.example.myapplication4.myLib.NetworkReceiver;
@@ -102,8 +104,19 @@ public class LoginRegisterAcitvity extends AppCompatActivity implements NetworkC
                                         LoginRegisterBean_Network loginRegisterBean_network = response.body();
                                         int code = loginRegisterBean_network.code;
                                         if (code == 0) {
+                                            SharedPreferences sharedPreferences = getSharedPreferences("userInfo", MODE_PRIVATE);
+                                            SharedPreferences.Editor editor = sharedPreferences.edit();
+                                            boolean isLogin = true;
+                                            editor.putBoolean("isLogin", isLogin);
+                                            editor.putString("username", username);
+                                            editor.apply();
+
+                                            MySingleton mySingleton = MySingleton.getInstance(getApplicationContext());
+                                            MySingleton.UserInfo userInfo = mySingleton.getUserInfo_firstFromSharedPreferences();
+                                            userInfo.isLogin = isLogin;
+                                            userInfo.username = username;
+
                                             Intent intent = new Intent();
-                                            intent.putExtra("username", username);
                                             setResult(RESULT_OK, intent);
                                             finish();
                                         } else {

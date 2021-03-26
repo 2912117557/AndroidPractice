@@ -1,6 +1,7 @@
 package com.example.myapplication4.film.brief.hotList;
 
 import android.content.Context;
+import android.content.Intent;
 import android.util.Log;
 
 import androidx.lifecycle.MutableLiveData;

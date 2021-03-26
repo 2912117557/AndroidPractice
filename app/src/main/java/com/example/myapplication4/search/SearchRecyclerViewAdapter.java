@@ -19,6 +19,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.example.myapplication4.R;
+import com.example.myapplication4.main.SearchResultFragmentDirections;
 
 import java.util.List;
 

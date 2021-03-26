@@ -110,6 +110,7 @@ public class ViewPager2Container extends LinearLayout {
             }
         } else if (disY > disX) {
             getParent().requestDisallowInterceptTouchEvent(false);
+
         }
     }
 

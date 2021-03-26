@@ -20,6 +20,7 @@ import androidx.navigation.fragment.NavHostFragment;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
+import com.bumptech.glide.manager.Lifecycle;
 import com.example.myapplication4.R;
 import com.example.myapplication4.myLib.MySingleton;
 import com.example.myapplication4.shared.LoginInterceptor;
@@ -70,22 +71,7 @@ public class MainActivity extends AppCompatActivity {
 
         loginRegisterLanucher = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(),
                 result -> {
-                    if (result.getResultCode() == RESULT_OK) {
-                        Intent intent = Objects.requireNonNull(result.getData());
-                        boolean isLogin = true;
-                        String username = intent.getStringExtra("username");
-                        SharedPreferences sharedPreferences = getSharedPreferences("userInfo", MODE_PRIVATE);
-                        SharedPreferences.Editor editor = sharedPreferences.edit();
-                        editor.putBoolean("isLogin", isLogin);
-                        editor.putString("username", username);
-                        editor.apply();
-
-                        userInfo.isLogin = isLogin;
-                        userInfo.username = username;
-
-                        nameTextView.setText(username);
-                        nameTextView.setClickable(false);
-                    }
+                    if (result.getResultCode() == RESULT_OK) {}
                 });
 
         nameTextView.setOnClickListener(new View.OnClickListener() {

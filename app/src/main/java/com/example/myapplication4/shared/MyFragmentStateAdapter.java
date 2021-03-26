@@ -27,4 +27,6 @@ public class MyFragmentStateAdapter extends FragmentStateAdapter {
     public int getItemCount() {
         return mFragments.size();
     }
+
+
 }

@@ -50,7 +50,7 @@ public class UserInfoFragment extends Fragment {
                 View headerView = navView.getHeaderView(0);
                 TextView nameTextView = headerView.findViewById(R.id.actMain_drawerlayout_header_TextView1);
                 nameTextView.setText("  登录/注册");
-                nameTextView.setClickable(false);
+                nameTextView.setClickable(true);
 
                 NavController navController = Navigation.findNavController(view);
                 navController.popBackStack();

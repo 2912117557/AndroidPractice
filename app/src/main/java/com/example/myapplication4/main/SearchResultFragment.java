@@ -42,6 +42,7 @@ public class SearchResultFragment extends Fragment{
     private TextView notFoundTextView;
     private final Handler handler = new Handler();
     private String query;
+    private SearchView mSearchView;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -81,6 +82,9 @@ public class SearchResultFragment extends Fragment{
     public void handleIntent(Intent intent) {
         if (Intent.ACTION_SEARCH.equals(intent.getAction())) {
             query = intent.getStringExtra(SearchManager.QUERY);
+            if(mSearchView!=null){
+                mSearchView.setQuery(query,false);
+            }
             SearchRecentSuggestions suggestions = new SearchRecentSuggestions(mActivity,
                     MySearchRecentSuggestionsProvider.AUTHORITY, MySearchRecentSuggestionsProvider.MODE);
             suggestions.saveRecentQuery(query, null);
@@ -129,7 +133,7 @@ public class SearchResultFragment extends Fragment{
         inflater.inflate(R.menu.menu_search_result_fragment_optionmenu, menu);
 
         MenuItem searchItem = menu.findItem(R.id.action_search);
-        SearchView mSearchView = (SearchView) searchItem.getActionView();
+        mSearchView = (SearchView) searchItem.getActionView();
         mSearchView.setIconifiedByDefault(false);
         mSearchView.setQuery(query, false);
         mSearchView.setSubmitButtonEnabled(true);

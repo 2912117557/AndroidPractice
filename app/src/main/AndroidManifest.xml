@@ -19,11 +19,11 @@
         <meta-data
             android:name="com.example.myapplication4.myLib.glideHttps.OkHttpGlideModule"
             android:value="GlideModule" />
-        <!--        安全浏览检查,false==停用 -->
+        <!--        webView安全浏览检查,false==停用 -->
         <meta-data
             android:name="android.webkit.WebView.EnableSafeBrowsing"
             android:value="false" />
-        <!--        将匿名诊断数据上传到 Google,true==停用 -->
+        <!--        webView将匿名诊断数据上传到 Google,true==停用 -->
         <meta-data
             android:name="android.webkit.WebView.MetricsOptOut"
             android:value="true" />

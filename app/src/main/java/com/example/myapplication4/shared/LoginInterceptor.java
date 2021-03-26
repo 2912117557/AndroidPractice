@@ -28,18 +28,6 @@ public class LoginInterceptor {
                     new ActivityResultContracts.StartActivityForResult(),
                     result -> {
                         if (result.getResultCode() == RESULT_OK) {
-                            Intent intent = Objects.requireNonNull(result.getData());
-                            boolean isLogin2 = true;
-                            String username = intent.getStringExtra("username");
-                            SharedPreferences sharedPreferences = componentActivity.getSharedPreferences("userInfo", MODE_PRIVATE);
-                            SharedPreferences.Editor editor = sharedPreferences.edit();
-                            editor.putBoolean("isLogin", isLogin2);
-                            editor.putString("username", username);
-                            editor.apply();
-
-                            userInfo.isLogin = isLogin2;
-                            userInfo.username = username;
-
                             loginInterceptSuccess.originalOperation();
                         }
                     });

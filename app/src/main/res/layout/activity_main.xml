@@ -21,7 +21,6 @@
             android:theme="@style/ToolbarTheme.MyToolbarStyle"
             app:popupTheme="@style/ToolbarPopupTheme"
             app:title=""
-
             app:titleTextAppearance="@style/ToolbarTitleStyle">
 
             <RadioGroup
